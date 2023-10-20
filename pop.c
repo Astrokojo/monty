@@ -17,5 +17,5 @@ void pop(stack_t **head, unsigned int line_number)
 	}
 	next_node = (*head)->next;
 	free(*head);
-	*top = next_node;
+	*head = next_node;
 }

@@ -21,8 +21,7 @@ void push(stack_t **head, int value)
 	if (*head != NULL)
 		(*head)->prev = new;
 
-	new->n = n;
-	new->n = *head;
+	new->n = value;
 	new->prev = NULL;
 	*head = new;
 }
