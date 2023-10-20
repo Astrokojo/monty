@@ -2,7 +2,7 @@
 /**
  * push - adds an element to the top of stack
  * @head: head of stack.
- * @value: int input 
+ * @value: int input
  *
  * Return: nothing
  */
