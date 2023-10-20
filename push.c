@@ -18,10 +18,12 @@ void push(stack_t **head, int value)
 		exit(EXIT_FAILURE);
 	}
 
+	new->n = value;
+	new->prev = NULL;
+	*head = new;
+	
 	if (*head != NULL)
 		(*head)->prev = new;
 
-	new->n = value;
-	new->prev = NULL;
 	*head = new;
 }
